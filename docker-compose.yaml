@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  migrator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xenforo-flarum-migrator
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./src/logs:/app/src/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python3 src/main.py

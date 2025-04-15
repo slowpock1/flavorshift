@@ -1,0 +1,15 @@
+migrate_light: true
+
+xenforo_db:
+  host: localhost
+  user: root
+  password: root
+  database: xenforo
+  path: path
+ 
+flarum_db:
+  host: localhost
+  user: root
+  password: root
+  database: flarum
+  path: path
